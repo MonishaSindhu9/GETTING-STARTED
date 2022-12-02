@@ -4,7 +4,7 @@ SET SERVEROUTPUT ON
 DECLARE
 rno number(3);
 BEGIN
-select rollno into rno from student where sname='SRAVANI';
+select rollno into rno from student where sname='MONISHA';
 dbms_output.put_line('19K61A0'||rno);
 END;
 
@@ -13,7 +13,7 @@ DECLARE
 stdname varchar2(20);
 rno number(3);
 BEGIN
-select sname,rollno into stdname,rno from student where rollno=501;
+select sname,rollno into stdname,rno from student where rollno=478;
 dbms_output.put_line('The student '||stdname||' roll number is 19K61A0'||rno);
 END;
 
